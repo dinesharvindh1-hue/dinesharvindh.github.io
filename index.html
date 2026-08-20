@@ -12,80 +12,125 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@display=swap
 
   <style>
-    body{
-      background:#0a0a0a;
-      color:#f5f5f5;
-      font-family:Inter,sans-serif;
-      margin:0;
-      text-align:center;
-      line-height:1.8;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Manrope:wght@300;400;500&display=swap');
 
-    .container{
-      max-width:700px;
-      margin:auto;
-      padding:80px 24px;
-    }
+:root{
+    --bg:#050505;
+    --text:#f5f5f5;
+    --muted:#8f8f8f;
+    --line:#1b1b1b;
+}
 
-    .name{
-      color:#888;
-      letter-spacing:4px;
-      font-size:.9rem;
-      margin-bottom:100px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .hero-tag{
-      color:#777;
-      letter-spacing:4px;
-      text-transform:uppercase;
-      font-size:.8rem;
-    }
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Manrope',sans-serif;
+}
 
-    h1{
-      font-family:"Cormorant Garamond",serif;
-      font-size:5rem;
-      margin:15px 0;
-      font-weight:600;
-    }
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    padding:120px 40px;
+}
 
-    .subtitle{
-      color:#999;
-      max-width:500px;
-      margin:0 auto 120px;
-    }
+/* centered vertical guide */
 
-    .section{
-      text-align:left;
-      margin-bottom:80px;
-    }
+.content{
+    max-width:650px;
+    margin:auto;
+    border-left:1px solid var(--line);
+    border-right:1px solid var(--line);
+    padding:0 70px;
+}
 
-    .section-number{
-      color:#666;
-      margin-bottom:10px;
-    }
+.name{
+    text-align:center;
+    letter-spacing:6px;
+    color:var(--muted);
+    font-size:.8rem;
+    margin-bottom:120px;
+}
 
-    h2{
-      font-family:"Cormorant Garamond",serif;
-      font-size:2.2rem;
-      margin-bottom:15px;
-    }
+.hero{
+    text-align:center;
+    margin-bottom:140px;
+}
 
-    p{
-      color:#d0d0d0;
-    }
+.hero-tag{
+    color:var(--muted);
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.75rem;
+    margin-bottom:20px;
+}
 
-    footer{
-      margin-top:120px;
-      border-top:1px solid #222;
-      padding-top:40px;
-      color:#888;
-    }
+.hero h1{
+    font-family:'Bodoni Moda',serif;
+    font-size:6rem;
+    line-height:0.9;
+    font-weight:500;
+    margin-bottom:25px;
+}
 
-    @media(max-width:768px){
-      h1{
-        font-size:3.5rem;
-      }
-    }
+.subtitle{
+    color:var(--muted);
+    max-width:450px;
+    margin:auto;
+}
+
+.section{
+    margin-bottom:100px;
+}
+
+.section-number{
+    color:var(--muted);
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.section h2{
+    font-family:'Bodoni Moda',serif;
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.section p{
+    text-align:center;
+    color:#d7d7d7;
+}
+
+footer{
+    border-top:1px solid var(--line);
+    padding-top:50px;
+    margin-top:100px;
+    text-align:center;
+    color:var(--muted);
+}
+
+@media(max-width:768px){
+
+.content{
+    border:none;
+    padding:0;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.section h2{
+    font-size:2rem;
+}
+
+}
   </style>
 </head>
 
