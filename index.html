@@ -6,7 +6,7 @@
 4
 <meta charset="UTF-8">
 5
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 6
  
 7
@@ -14,149 +14,149 @@
 8
  
 9
-<link rel="preconnect>
+https://fonts.googleapis.com
 10
-<link rel="preconnect" href="https://fonts.gstatic.com" crossoriginght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="pregstatic.com
 11
  
 12
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;nter:wght@300;400;500&display=swap
 13
-:root{
+ 
 14
---bg:#faf8f4;
+<style>
 15
---text:#161616;
+ 
 16
---muted:#6e6e6e;
+:root{
 17
---card:#ffffff;
+--bg:#0a0a0a;
 18
---border:#e8e8e8;
+--text:#f5f5f5;
 19
-}
+--muted:#898989;
 20
- 
+}
 21
-[data-theme="dark"]{
+ 
 22
---bg:#0d1117;
-23
---text:#f4f4f4;
-24
---muted:#9ca3af;
-25
---card:#161b22;
-26
---border:#2d333b;
-27
-}
-28
- 
-29
 *{
-30
+23
 margin:0;
-31
+24
 padding:0;
-32
+25
 box-sizing:border-box;
-33
+26
 }
-34
+27
  
-35
+28
 html{
-36
+29
 scroll-behavior:smooth;
+30
+}
+31
+ 
+32
+body{
+33
+background:var(--bg);
+34
+color:var(--text);
+35
+font-family:'Inter',sans-serif;
+36
+line-height:1.8;
 37
 }
 38
  
 39
-body{
-40
-font-family:'Newsreader', serif;
-41
-background:var(--bg);
-42
-color:var(--text);
-43
-line-height:1.8;
-44
-transition:0.3s ease;
-45
-}
-46
- 
-47
 .container{
-48
+40
+width:100%;
+41
 max-width:720px;
-49
+42
 margin:auto;
-50
-padding:60px 24px;
-51
+43
+padding:60px 24px 120px;
+44
 }
-52
+45
  
-53
-.nav{
-54
+46
+/* NAV */
+47
+ 
+48
+nav{
+49
 display:flex;
-55
-justify-content:space-between;
-56
-align-items:center;
-57
-margin-bottom:80px;
-58
+50
+justify-content:center;
+51
+margin-bottom:120px;
+52
 }
-59
+53
  
-60
+54
 .logo{
+55
+font-size:0.9rem;
+56
+letter-spacing:4px;
+57
+text-transform:uppercase;
+58
+color:var(--muted);
+59
+}
+60
+ 
 61
-font-family:'Space Grotesk',sans-serif;
+/* HERO */
 62
-font-size:1rem;
+ 
 63
-font-weight:700;
+.hero{
 64
-}
+text-align:center;
 65
- 
+margin-bottom:140px;
 66
-.toggle{
-67
-border:none;
-68
-background:var(--card);
-69
-padding:10px 14px;
-70
-border-radius:999px;
-71
-cursor:pointer;
-72
-border:1px solid var(--border);
-73
-font-size:1rem;
-74
 }
-75
+67
  
-76
+68
+.eyebrow{
+69
+color:var(--muted);
+70
+text-transform:uppercase;
+71
+letter-spacing:4px;
+72
+font-size:.8rem;
+73
+}
+74
+ 
+75
 .hero h1{
+76
+font-family:'Cormorant Garamond',serif;
 77
-font-family:'Space Grotesk',sans-serif;
+font-size:5.5rem;
 78
-font-size:3rem;
+font-weight:600;
 79
-line-height:1;
+line-height:0.9;
 80
-margin-bottom:16px;
+margin:20px 0;
 81
 }
 82
@@ -164,468 +164,420 @@ margin-bottom:16px;
 83
 .hero p{
 84
-font-size:1.25rem;
+max-width:500px;
 85
-color:var(--muted);
+margin:auto;
 86
-margin-bottom:60px;
-87
-}
-88
- 
-89
-.post{
-90
-padding:32px;
-91
-margin-bottom:32px;
-92
-background:var(--card);
-93
-border:1px solid var(--border);
-94
-border-radius:24px;
-95
-transition:.25s;
-96
-}
-97
- 
-98
-.post:hover{
-99
-transform:translateY(-3px);
-100
-}
-101
- 
-102
-.post h2{
-103
-font-family:'Space Grotesk',sans-serif;
-104
-margin-bottom:8px;
-105
-}
-106
- 
-107
-.date{
-108
 color:var(--muted);
+87
+font-size:1.05rem;
+88
+}
+89
+ 
+90
+/* POSTS */
+91
+ 
+92
+.post{
+93
+margin-bottom:100px;
+94
+}
+95
+ 
+96
+.number{
+97
+color:var(--muted);
+98
+font-size:.8rem;
+99
+letter-spacing:3px;
+100
+margin-bottom:14px;
+101
+}
+102
+ 
+103
+.post h2{
+104
+font-family:'Cormorant Garamond',serif;
+105
+font-size:2.5rem;
+106
+margin-bottom:10px;
+107
+}
+108
+ 
 109
-margin-bottom:18px;
+.post p{
 110
-font-size:.95rem;
+color:#d6d6d6;
 111
 }
 112
  
 113
-.post p{
+/* FOOTER */
 114
-font-size:1.15rem;
-115
-}
-116
  
-117
+115
 footer{
+116
+margin-top:140px;
+117
+padding-top:40px;
 118
-margin-top:100px;
+border-top:1px solid #222;
 119
 text-align:center;
 120
-color:var(--muted);
+}
 121
-}
+ 
 122
- 
+footer p{
 123
-a{
+color:var(--muted);
 124
-color:inherit;
+}
 125
-text-decoration:none;
+ 
 126
-}
+.links{
 127
- 
-128
-.socials{
-129
 margin-top:20px;
+128
+}
+129
+ 
 130
-display:flex;
+.links a{
 131
-justify-content:center;
+color:var(--text);
 132
-gap:20px;
+text-decoration:none;
 133
-}
+margin:0 12px;
 134
- 
+}
 135
-.socials a:hover{
+ 
 136
-opacity:0.7;
+.links a:hover{
 137
-}
+opacity:0.7;
 138
- 
+}
 139
-@media(max-width:768px){
+ 
 140
-.hero h1{
+/* Build section */
 141
-font-size:2.2rem;
+ 
 142
-}
+.build{
 143
-}
+margin-top:140px;
 144
-</style>
+border-top:1px solid #222;
 145
-</head>
+padding-top:60px;
 146
- 
+}
 147
-<body>
+ 
 148
- 
+.build h2{
 149
-<div class="container">
+font-family:'Cormorant Garamond',serif;
 150
- 
+font-size:2.5rem;
 151
-<nav class="nav">
+margin-bottom:25px;
 152
-<div class="logo">DA</div>
+}
 153
  
 154
-<button class="toggle" id="themeToggle">
+.build ol{
 155
-🌙
+color:#cfcfcf;
 156
-</button>
+margin-left:20px;
 157
-</nav>
+}
 158
  
 159
-<section class="hero">
+.build li{
 160
-<h1>Dinesh Arvindh</h1>
+margin-bottom:12px;
 161
- 
+}
 162
-<p>
+ 
 163
-Medical Assistant, lifelong learner,
+@media(max-width:768px){
 164
-and builder of interesting things.
+ 
 165
-</p>
+.hero h1{
 166
-</section>
+font-size:3.5rem;
 167
- 
+}
 168
-<article class="post">
-169
-<h2>Some Learnings at 30</h2>
-170
  
+169
+.post h2{
+170
+font-size:2rem;
 171
-<div class="date">
+}
 172
-August 2026
+ 
 173
-</div>
+}
 174
  
 175
-<p>
+</style>
 176
-The older I get, the more I realize that
+</head>
 177
-consistency beats intensity. Small actions,
+ 
 178
-repeated for years, become identity.
+<body>
 179
-</p>
+ 
 180
-</article>
+<div class="container">
 181
  
 182
-<article class="post">
+<nav>
 183
-<h2>Notes on Growth</h2>
+<div class="logo">DINESH ARVINDH</div>
 184
- 
+</nav>
 185
-<div class="date">
-186
-July 2026
-187
-</div>
-188
  
+186
+<section class="hero">
+187
+ 
+188
+<div class="eyebrow">
 189
-<p>
+REFLECTIONS
 190
-Most opportunities come through people.
+</div>
 191
-Invest in relationships, generosity,
+ 
 192
-and shared curiosity.
+<h1>
 193
-</p>
+Learnings<br>at 25
 194
-</article>
+</h1>
 195
  
 196
-<footer>
-197
- 
-198
 <p>
+197
+Notes on growth, ambition, relationships,
+198
+mistakes, health, purpose, and the ideas
 199
-© 2026 Dinesh Arvindh
+that shaped me.
 200
 </p>
 201
  
 202
-<div class="socials">
+</section>
 203
-#
+ 
 204
-<a href="#">LinkedIn</a>
+<section class="post">
 205
-<a r>
+ 
 206
- 
+<div class="number">01</div>
 207
-</div>
+ 
 208
- 
+<h2>Focus</h2>
 209
-<script>
+ 
 210
-const toggle = document.getElementById("themeToggle");
+<p>
 211
- 
+The most meaningful progress in life rarely
 212
-const currentTheme =
+comes from intensity. It comes from showing up,
 213
-localStorage.getItem("theme");
+repeatedly, even when the excitement fades.
 214
- 
+</p>
 215
-if(currentTheme){
+ 
 216
-document.documentElement.setAttribute(
+</section>
 217
-"data-theme",
+ 
 218
-currentTheme
+<section class="post">
 219
-);
+ 
 220
- 
+<div class="number">02</div>
 221
-toggle.textContent =
+ 
 222
-currentTheme === "dark"
+<h2>Friendship</h2>
 223
-? "☀️"
+ 
 224
-: "🌙";
+<p>
 225
-}
+The people closest to us shape our thinking,
 226
- 
+values and future. Relationships compound just
 227
-toggle.addEventListener("click", () => {
+like investments.
 228
- 
+</p>
 229
-const theme =
+ 
 230
-document.documentElement.getAttribute("data-theme");
+</section>
 231
  
 232
-if(theme === "dark"){
+<section class="post">
 233
-document.documentElement.removeAttribute(
+ 
 234
-"data-theme"
+<div class="number">03</div>
 235
-);
+ 
 236
-toggle.textContent = "🌙";
+<h2>Health</h2>
 237
-localStorage.setItem("theme","light");
+ 
 238
-}
+<p>
 239
-else{
+Energy is the foundation for everything else.
 240
-document.documentElement.setAttribute(
+Sleep, movement and nutrition affect every
 241
-"data-theme",
+decision we make.
 242
-"dark"
+</p>
 243
-);
+ 
 244
-toggle.textContent = "☀️";
+</section>
 245
-localStorage.setItem("theme","dark");
+ 
 246
-}
+<section class="post">
 247
-});
+ 
 248
-</script>
+<div class="number">04</div>
 249
  
 250
-</body>
+<h2>Career</h2>
 251
-</html>
-
-  <section class="hero">
-2
-<span class="eyebrow">REFLECTIONS</span>
-3
  
-4
-<h1>Learnings at 25</h1>
-5
- 
-6
+252
 <p>
-7
-Notes on growth, ambition, relationships,
-8
-mistakes, and the ideas that shaped me.
-9
+253
+Talent matters, but curiosity matters more.
+254
+The willingness to learn repeatedly creates
+255
+opportunities over time.
+256
 </p>
-10
-</section> 
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap');
-2
+257
  
-3
-:root{
-4
---bg:#0a0a0a;
-5
---text:#f5f5f5;
-6
---muted:#8a8a8a;
-7
-}
-8
+258
+</section>
+259
  
-9
-body{
-10
-background:var(--bg);
-11
-color:var(--text);
-12
-font-family:'Inter',sans-serif;
-13
-}
-14
+260
+<footer>
+261
  
-15
-.hero{
-16
-max-width:700px;
-17
-margin:140px auto 100px;
-18
-padding:0 24px;
-19
-}
-20
+262
+<p>
+263
+© 2026 Dinesh Arvindh
+264
+</p>
+265
  
-21
-.eyebrow{
-22
-color:var(--muted);
-23
-text-transform:uppercase;
-24
-letter-spacing:0.2em;
-25
-font-size:0.75rem;
-26
-}
-27
+266
+<div class="links">
+267
+#
+268
+#
+269
+</div>
+270
  
-28
-.hero h1{
-29
-font-family:'Cormorant Garamond',serif;
-30
-font-size:5rem;
-31
-font-weight:600;
-32
-line-height:0.95;
-33
-margin:20px 0;
-34
-}
-35
+271
+</footer>
+272
  
-36
-.hero p{
-37
-color:var(--muted);
-38
-font-size:1.1rem;
-39
-max-width:500px;
-40
-}
-  .build-notes{
-2
-max-width:700px;
-3
-margin:120px auto;
-4
-padding:0 24px;
-5
-}
-6
+273
+<section class="build">
+274
  
-7
-.build-notes h2{
-8
-font-family:'Cormorant Garamond',serif;
-9
-font-size:2.5rem;
-10
-margin-bottom:30px;
-11
-}
-12
+275
+<h2>How To Update This Website</h2>
+276
  
-13
-.build-notes ol{
-14
-color:var(--muted);
-15
-line-height:2;
-16
-}
+277
+<ol>
+278
+<li>Log in to GitHub.</li>
+279
+<li>Open your repository.</li>
+280
+<li>Click <strong>index.html</strong>.</li>
+281
+<li>Click the pencil icon.</li>
+282
+<li>Edit any text you want.</li>
+283
+<li>Click <strong>Commit Changes</strong>.</li>
+284
+<li>Refresh your website after 1 minute.</li>
+285
+</ol>
+286
+ 
+287
+</section>
+288
+ 
+289
+</div>
+290
+ 
+291
+</body>
+292
+</html>
