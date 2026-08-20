@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+2
+<html lang="en">
+3
+<head>
+4
+<meta charset="UTF-8">
+5
+<meta name="viewport" content="width=device-width, initial-scale=1">
+6
+ 
+7
+<title>Dinesh Arvindh</title>
+8
+ 
+9
+<link rel="preconnect>
+10
+<link rel="preconnect" href="https://fonts.gstatic.com" crossoriginght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+11
+ 
+12
+<style>
+13
+:root{
+14
+--bg:#faf8f4;
+15
+--text:#161616;
+16
+--muted:#6e6e6e;
+17
+--card:#ffffff;
+18
+--border:#e8e8e8;
+19
+}
+20
+ 
+21
+[data-theme="dark"]{
+22
+--bg:#0d1117;
+23
+--text:#f4f4f4;
+24
+--muted:#9ca3af;
+25
+--card:#161b22;
+26
+--border:#2d333b;
+27
+}
+28
+ 
+29
+*{
+30
+margin:0;
+31
+padding:0;
+32
+box-sizing:border-box;
+33
+}
+34
+ 
+35
+html{
+36
+scroll-behavior:smooth;
+37
+}
+38
+ 
+39
+body{
+40
+font-family:'Newsreader', serif;
+41
+background:var(--bg);
+42
+color:var(--text);
+43
+line-height:1.8;
+44
+transition:0.3s ease;
+45
+}
+46
+ 
+47
+.container{
+48
+max-width:720px;
+49
+margin:auto;
+50
+padding:60px 24px;
+51
+}
+52
+ 
+53
+.nav{
+54
+display:flex;
+55
+justify-content:space-between;
+56
+align-items:center;
+57
+margin-bottom:80px;
+58
+}
+59
+ 
+60
+.logo{
+61
+font-family:'Space Grotesk',sans-serif;
+62
+font-size:1rem;
+63
+font-weight:700;
+64
+}
+65
+ 
+66
+.toggle{
+67
+border:none;
+68
+background:var(--card);
+69
+padding:10px 14px;
+70
+border-radius:999px;
+71
+cursor:pointer;
+72
+border:1px solid var(--border);
+73
+font-size:1rem;
+74
+}
+75
+ 
+76
+.hero h1{
+77
+font-family:'Space Grotesk',sans-serif;
+78
+font-size:3rem;
+79
+line-height:1;
+80
+margin-bottom:16px;
+81
+}
+82
+ 
+83
+.hero p{
+84
+font-size:1.25rem;
+85
+color:var(--muted);
+86
+margin-bottom:60px;
+87
+}
+88
+ 
+89
+.post{
+90
+padding:32px;
+91
+margin-bottom:32px;
+92
+background:var(--card);
+93
+border:1px solid var(--border);
+94
+border-radius:24px;
+95
+transition:.25s;
+96
+}
+97
+ 
+98
+.post:hover{
+99
+transform:translateY(-3px);
+100
+}
+101
+ 
+102
+.post h2{
+103
+font-family:'Space Grotesk',sans-serif;
+104
+margin-bottom:8px;
+105
+}
+106
+ 
+107
+.date{
+108
+color:var(--muted);
+109
+margin-bottom:18px;
+110
+font-size:.95rem;
+111
+}
+112
+ 
+113
+.post p{
+114
+font-size:1.15rem;
+115
+}
+116
+ 
+117
+footer{
+118
+margin-top:100px;
+119
+text-align:center;
+120
+color:var(--muted);
+121
+}
+122
+ 
+123
+a{
+124
+color:inherit;
+125
+text-decoration:none;
+126
+}
+127
+ 
+128
+.socials{
+129
+margin-top:20px;
+130
+display:flex;
+131
+justify-content:center;
+132
+gap:20px;
+133
+}
+134
+ 
+135
+.socials a:hover{
+136
+opacity:0.7;
+137
+}
+138
+ 
+139
+@media(max-width:768px){
+140
+.hero h1{
+141
+font-size:2.2rem;
+142
+}
+143
+}
+144
+</style>
+145
+</head>
+146
+ 
+147
+<body>
+148
+ 
+149
+<div class="container">
+150
+ 
+151
+<nav class="nav">
+152
+<div class="logo">DA</div>
+153
+ 
+154
+<button class="toggle" id="themeToggle">
+155
+🌙
+156
+</button>
+157
+</nav>
+158
+ 
+159
+<section class="hero">
+160
+<h1>Dinesh Arvindh</h1>
+161
+ 
+162
+<p>
+163
+Medical Assistant, lifelong learner,
+164
+and builder of interesting things.
+165
+</p>
+166
+</section>
+167
+ 
+168
+<article class="post">
+169
+<h2>Some Learnings at 30</h2>
+170
+ 
+171
+<div class="date">
+172
+August 2026
+173
+</div>
+174
+ 
+175
+<p>
+176
+The older I get, the more I realize that
+177
+consistency beats intensity. Small actions,
+178
+repeated for years, become identity.
+179
+</p>
+180
+</article>
+181
+ 
+182
+<article class="post">
+183
+<h2>Notes on Growth</h2>
+184
+ 
+185
+<div class="date">
+186
+July 2026
+187
+</div>
+188
+ 
+189
+<p>
+190
+Most opportunities come through people.
+191
+Invest in relationships, generosity,
+192
+and shared curiosity.
+193
+</p>
+194
+</article>
+195
+ 
+196
+<footer>
+197
+ 
+198
+<p>
+199
+© 2026 Dinesh Arvindh
+200
+</p>
+201
+ 
+202
+<div class="socials">
+203
+#
+204
+<a href="#">LinkedIn</a>
+205
+<a r>
+206
+ 
+207
+</div>
+208
+ 
+209
+<script>
+210
+const toggle = document.getElementById("themeToggle");
+211
+ 
+212
+const currentTheme =
+213
+localStorage.getItem("theme");
+214
+ 
+215
+if(currentTheme){
+216
+document.documentElement.setAttribute(
+217
+"data-theme",
+218
+currentTheme
+219
+);
+220
+ 
+221
+toggle.textContent =
+222
+currentTheme === "dark"
+223
+? "☀️"
+224
+: "🌙";
+225
+}
+226
+ 
+227
+toggle.addEventListener("click", () => {
+228
+ 
+229
+const theme =
+230
+document.documentElement.getAttribute("data-theme");
+231
+ 
+232
+if(theme === "dark"){
+233
+document.documentElement.removeAttribute(
+234
+"data-theme"
+235
+);
+236
+toggle.textContent = "🌙";
+237
+localStorage.setItem("theme","light");
+238
+}
+239
+else{
+240
+document.documentElement.setAttribute(
+241
+"data-theme",
+242
+"dark"
+243
+);
+244
+toggle.textContent = "☀️";
+245
+localStorage.setItem("theme","dark");
+246
+}
+247
+});
+248
+</script>
+249
+ 
+250
+</body>
+251
+</html>
+
+  <section class="hero">
+2
+<span class="eyebrow">REFLECTIONS</span>
+3
+ 
+4
+<h1>Learnings at 25</h1>
+5
+ 
+6
+<p>
+7
+Notes on growth, ambition, relationships,
+8
+mistakes, and the ideas that shaped me.
+9
+</p>
+10
+</section> 
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap');
+2
+ 
+3
+:root{
+4
+--bg:#0a0a0a;
+5
+--text:#f5f5f5;
+6
+--muted:#8a8a8a;
+7
+}
+8
+ 
+9
+body{
+10
+background:var(--bg);
+11
+color:var(--text);
+12
+font-family:'Inter',sans-serif;
+13
+}
+14
+ 
+15
+.hero{
+16
+max-width:700px;
+17
+margin:140px auto 100px;
+18
+padding:0 24px;
+19
+}
+20
+ 
+21
+.eyebrow{
+22
+color:var(--muted);
+23
+text-transform:uppercase;
+24
+letter-spacing:0.2em;
+25
+font-size:0.75rem;
+26
+}
+27
+ 
+28
+.hero h1{
+29
+font-family:'Cormorant Garamond',serif;
+30
+font-size:5rem;
+31
+font-weight:600;
+32
+line-height:0.95;
+33
+margin:20px 0;
+34
+}
+35
+ 
+36
+.hero p{
+37
+color:var(--muted);
+38
+font-size:1.1rem;
+39
+max-width:500px;
+40
+}
+  .build-notes{
+2
+max-width:700px;
+3
+margin:120px auto;
+4
+padding:0 24px;
+5
+}
+6
+ 
+7
+.build-notes h2{
+8
+font-family:'Cormorant Garamond',serif;
+9
+font-size:2.5rem;
+10
+margin-bottom:30px;
+11
+}
+12
+ 
+13
+.build-notes ol{
+14
+color:var(--muted);
+15
+line-height:2;
+16
+}
